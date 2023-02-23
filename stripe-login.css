@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Shone';
+    src: url('./Sohne-latin-basic.woff2');
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    /* font-family: 'Shone', sans-serif; */
+    font-family: "Ubuntu", "Roboto", "Segoe UI", sans-serif;
+    color: rgb(60, 66, 87);
+    display: flex;
+    justify-content: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(99, 91, 255);
+    text-decoration: none;
+}
+
+.background {
+    position: absolute;
+    top: -33%;
+    left: 0;
+    right: 0;
+    bottom: 66%;
+    z-index: -10;
+    transform: skewY(-12deg);
+    background-color: pink;
+}
+
+.background-grey {
+    background-color: rgb(247, 250, 252);
+    height: 100%;
+    /* transform: translateY(-40px); */
+    margin-bottom: -40px;
+}
+
+.background-blue {
+    position: relative;
+    height: 40px;
+    width: 30%;
+    background-color: #7a73ff;
+    /* float: right; */
+}
+
+.background-blue-right {
+    float: right;
+}
+
+.background-blue-left {
+    clear: both;
+    float: left;
+}
+
+.background-lightblue {
+    clear: both;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    background-color: #80e9ff;
+    left: calc(30% - 300px);
+    bottom: 70px;
+    opacity: 75%;
+}
+
+.display_area {
+    max-width: 540px;
+    min-height: 100%;
+    border-left: 0.5px dashed #e8e8e8;
+    border-right: 0.5px dashed #e8e8e8;
+    margin: 0 1rem;
+}
+
+.top {
+    padding: 1.5rem 1.5rem;
+}
+
+.top svg path {
+    fill: rgb(42, 47, 69);
+}
+
+.dialog {
+    margin: -1px;
+    padding: 1.25rem;
+    box-shadow: 0 0 20px lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.dialog_title {
+    font-family: 'Shone', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.text_input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.text_input label {
+    padding: 1rem 1px;
+}
+
+.text_input input {
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    padding: 0.75rem;
+    font-family: "Ubuntu", "Roboto", "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+    color: inherit;
+}
+
+.check_input input {
+    margin: 2rem 0;
+    accent-color: rgb(99, 91, 255);
+}
+
+.dialog button {
+    border-radius: 5px;
+    background-color: rgb(99, 91, 255);
+    color: white;
+    border: none;
+    height: 3rem;
+}
+
+#sso {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.dialog_post,
+.footer {
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+}
+
+.sec {
+    margin: 1rem 0;
+}
+
+.sec_badge {
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 1px 5px;
+    width: fit-content;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: rgb(105, 115, 134);
+    fill: rgb(105, 115, 134);
+}
+
+.sec_badge svg {
+    margin-right: 2px;
+}
+
+.helpful {
+    margin: 5px 0;
+}
+
+.helpful button {
+    box-shadow: 0 0 5px #e8e8e8;
+    background-color: transparent;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.footer ul {
+    display: flex;
+    padding: 0;
+}
+
+.footer li {
+    list-style-type: none;
+    color: rgb(105, 115, 134);
+}
+
+.footer li:not(:last-child)::after {
+    content: "·";
+    margin: 0 0.5rem;
+}
+
+@media (min-width:481px) {
+    .display_area {
+        padding-top: 3rem;
+    }
+
+    .dialog {
+        padding: 3.25rem 5rem;
+    }
+}
